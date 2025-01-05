@@ -1,7 +1,7 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import dotenv from "dotenv";
-import "@nomiclabs/hardhat-etherscan";
+// import "@nomiclabs/hardhat-etherscan";
 
 dotenv.config();
 
