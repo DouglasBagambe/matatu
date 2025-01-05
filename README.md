@@ -1,13 +1,30 @@
-# Sample Hardhat Project
+# Matatu Game Smart Contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This repository contains the smart contracts and deployment scripts for the **Matatu Game**, a decentralized blockchain-based game built using Hardhat, Solidity, and Ethereum-compatible networks.
 
-Try running some of the following tasks:
+## Project Overview
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+Matatu is a blockchain-powered game where players can engage in various activities while leveraging the power of decentralized applications (dApps). The smart contracts handle the logic for game mechanics, player interactions, and transactions securely and transparently.
+
+### Key Features:
+
+- **Smart Contracts**: Developed in Solidity, managing the game rules and user interactions.
+- **Deployment Scripts**: Automated deployment scripts to deploy the contracts to Ethereum-compatible networks.
+- **Testing**: Unit tests using Hardhat's testing framework to ensure functionality and security of the contracts.
+- **Integration with Sepolia Testnet**: Contracts are deployed on the Sepolia testnet, providing a realistic environment for testing and development.
+
+## Installation
+
+To get started with the project, follow the steps below:
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- Yarn (Recommended for package management)
+
+### Steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/DouglasBagambe/matatu.git
+   ```
