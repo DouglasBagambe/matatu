@@ -1,17 +1,25 @@
 import React, { useState } from "react";
-import { createMatch } from "../services/apiService";
+import { useNavigate } from "react-router-dom";
 import { joinGame } from "../services/contractService";
+import "../styles/GameLobby.css";
 
 const GameLobby: React.FC = () => {
   const [playerAddress, setPlayerAddress] = useState("");
   const [matchId, setMatchId] = useState("");
+  const navigate = useNavigate();
 
   const handleJoinGame = async () => {
     try {
-      const match = await createMatch(playerAddress);
+      // Mock creating match (normally this would call backend to create a match)
+      const match = { id: "mockMatch123" };
       setMatchId(match.id);
+
+      // Call the mocked joinGame function
       await joinGame(playerAddress);
       alert("Game joined successfully!");
+
+      // Navigate to the game screen
+      navigate("/game");
     } catch (error) {
       console.error(error);
       alert("Failed to join game!");
